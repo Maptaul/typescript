@@ -84,15 +84,11 @@
 // };
 
 class Player {
-  private name: string;
-  public age: number;
-  public country: string;
-
-  constructor(n: string, a: number, c: string) {
-    this.name = n;
-    this.age = a;
-    this.country = c;
-  }
+  constructor(
+    private name: string,
+    public age: number,
+    readonly country: string
+  ) {}
 
   play() {
     console.log(`${this.name} is playing in ${this.country}.`);
@@ -104,7 +100,10 @@ const david = new Player("David", 35, "Bangladesh");
 
 david.name = "Alex";
 david.age = 36;
+david.country = "England";
 console.log(david.name);
+console.log(david.age);
+console.log(david.country);
 
 const Players: Player[] = [];
 
