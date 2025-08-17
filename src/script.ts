@@ -95,17 +95,15 @@
 //   }
 // }
 
-// const alex = new Player("Alex", 37, "Bangladesh");
-// const david = new Player("David", 35, "Bangladesh");
+import { Player } from "./classes/Player.js";
 
-// david.name = "Alex";
-// david.age = 36;
-// david.country = "England";
-// console.log(david.name);
-// console.log(david.age);
-// console.log(david.country);
+const alex = new Player("Alex", 37, "Bangladesh");
+const david = new Player("David", 35, "Bangladesh");
 
-// const Players: Player[] = [];
+console.log(david.age);
+console.log(david.country);
 
-// Players.push(alex);
-// Players.push(david);
+const Players: Player[] = [];
+
+Players.push(alex);
+Players.push(david);

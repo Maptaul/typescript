@@ -59,24 +59,22 @@
 // const sayHello = (user: userType) => {
 //   console.log(`Hello ${user.name}, you are ${user.age} years old.`);
 // };
-class Player {
-    name;
-    age;
-    country;
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
-    }
-    play() {
-        console.log(`${this.name} is playing in ${this.country}.`);
-    }
-}
+// class Player {
+//   constructor(
+//     private name: string,
+//     public age: number,
+//     readonly country: string
+//   ) {}
+//   play() {
+//     console.log(`${this.name} is playing in ${this.country}.`);
+//   }
+// }
+import { Player } from "./classes/Player.js";
 const alex = new Player("Alex", 37, "Bangladesh");
 const david = new Player("David", 35, "Bangladesh");
-console.log(alex.name);
+console.log(david.age);
+console.log(david.country);
 const Players = [];
 Players.push(alex);
 Players.push(david);
-export {};
 //# sourceMappingURL=script.js.map
