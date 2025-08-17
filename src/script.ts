@@ -63,22 +63,40 @@
 
 // TypeScript example with function and object types
 
-type stringOrNumber = string | number;
-type userType = {
+// type stringOrNumber = string | number;
+// type userType = {
+//   name: string;
+//   age: number;
+// };
+
+// const userDetails = (
+//   id: stringOrNumber,
+//   user: {
+//     name: string;
+//     age: number;
+//   }
+// ) => {
+//   console.log(`User ID: ${id}, name is ${user.name}, age is ${user.age}`);
+// };
+
+// const sayHello = (user: userType) => {
+//   console.log(`Hello ${user.name}, you are ${user.age} years old.`);
+// };
+
+class Player {
   name: string;
   age: number;
-};
+  country: string;
 
-const userDetails = (
-  id: stringOrNumber,
-  user: {
-    name: string;
-    age: number;
+  constructor(n: string, a: number, c: string) {
+    this.name = n;
+    this.age = a;
+    this.country = c;
   }
-) => {
-  console.log(`User ID: ${id}, name is ${user.name}, age is ${user.age}`);
-};
 
-const sayHello = (user: userType) => {
-  console.log(`Hello ${user.name}, you are ${user.age} years old.`);
-};
+  play() {
+    console.log(`${this.name} is playing in ${this.country}.`);
+  }
+}
+
+
