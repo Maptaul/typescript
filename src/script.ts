@@ -83,29 +83,29 @@
 //   console.log(`Hello ${user.name}, you are ${user.age} years old.`);
 // };
 
-class Player {
-  constructor(
-    private name: string,
-    public age: number,
-    readonly country: string
-  ) {}
+// class Player {
+//   constructor(
+//     private name: string,
+//     public age: number,
+//     readonly country: string
+//   ) {}
 
-  play() {
-    console.log(`${this.name} is playing in ${this.country}.`);
-  }
-}
+//   play() {
+//     console.log(`${this.name} is playing in ${this.country}.`);
+//   }
+// }
 
-const alex = new Player("Alex", 37, "Bangladesh");
-const david = new Player("David", 35, "Bangladesh");
+// const alex = new Player("Alex", 37, "Bangladesh");
+// const david = new Player("David", 35, "Bangladesh");
 
-david.name = "Alex";
-david.age = 36;
-david.country = "England";
-console.log(david.name);
-console.log(david.age);
-console.log(david.country);
+// david.name = "Alex";
+// david.age = 36;
+// david.country = "England";
+// console.log(david.name);
+// console.log(david.age);
+// console.log(david.country);
 
-const Players: Player[] = [];
+// const Players: Player[] = [];
 
-Players.push(alex);
-Players.push(david);
+// Players.push(alex);
+// Players.push(david);
