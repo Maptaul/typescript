@@ -132,19 +132,19 @@
 //   }
 // }
 
-import { Player } from "./classes/Player.js";
-import { IsPlayer } from "./interfaces/IsPlayer.js";
-const alex = new Player("alex", 40, "Bangladesh");
-const david = new Player("david", 34, "Bangladesh");
-let jason: IsPlayer;
+// import { Player } from "./classes/Player.js";
+// import { IsPlayer } from "./interfaces/IsPlayer.js";
+// const alex = new Player("alex", 40, "Bangladesh");
+// const david = new Player("david", 34, "Bangladesh");
+// let jason: IsPlayer;
 
-jason = new Player("json", 36, "Bangladesh");
+// jason = new Player("json", 36, "Bangladesh");
 
-console.log(jason.name);
-const players: IsPlayer[] = [];
+// console.log(jason.name);
+// const players: IsPlayer[] = [];
 
-players.push(david);
-players.push(alex);
+// players.push(david);
+// players.push(alex);
 
 // interface RectangleOptions {
 //   width: number;
