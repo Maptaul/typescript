@@ -83,27 +83,83 @@
 //   console.log(`Hello ${user.name}, you are ${user.age} years old.`);
 // };
 
-// class Player {
-//   constructor(
-//     private name: string,
-//     public age: number,
-//     readonly country: string
-//   ) {}
+// let add: (x: number, y: number, z: string) => void;
 
+// add = (a: number, b: number) =>{
+// return a + b;
+// }
+
+// let calculate: (a: number, b: number, c: string) => number;
+
+// calculate = (x: number, y: number, z: string) => {
+//   if (z === 'add') {
+//     return x + y;
+//   }
+//   else{
+//     return x - y;
+//   }
+// }
+
+// console.log(calculate(5, 3, 'minus')); // Output: 8
+// let userDetails: (
+//   id: number | string,
+//   userInfo: {
+//     name: string;
+//     age: number;
+//   }
+// ) => void;
+
+// userDetails = (
+//   id: number | string,
+//   userInfo: {
+//     name: string;
+//     age: number;
+//   }
+// ) => {};
+
+// class Player {
+//   name: string;
+//   age: number;
+//   county: string;
+
+//   constructor(n: string, a: number, c: string) {
+//     this.name = n;
+//     this.age = a;
+//     this.county = c;
+//   }
 //   play() {
-//     console.log(`${this.name} is playing in ${this.country}.`);
+//     console.log(`${this.name} from ${this.county} is playing at the age of ${this.age}.`);
 //   }
 // }
 
 import { Player } from "./classes/Player.js";
+import { IsPlayer } from "./interfaces/IsPlayer.js";
+const alex = new Player("alex", 40, "Bangladesh");
+const david = new Player("david", 34, "Bangladesh");
+let jason: IsPlayer;
 
-const alex = new Player("Alex", 37, "Bangladesh");
-const david = new Player("David", 35, "Bangladesh");
+jason = new Player("json", 36, "Bangladesh");
 
-console.log(david.age);
-console.log(david.country);
+console.log(jason.name);
+const players: IsPlayer[] = [];
 
-const Players: Player[] = [];
+players.push(david);
+players.push(alex);
 
-Players.push(alex);
-Players.push(david);
+// interface RectangleOptions {
+//   width: number;
+//   length: number;
+// }
+
+// function drawRectangle(options: RectangleOptions) {
+//   let width = options.width;
+//   let length = options.length;
+// }
+
+// let threeDOptions = {
+//   width: 20,
+//   length: 30,
+//   height: 10,
+// };
+
+// drawRectangle(threeDOptions);
